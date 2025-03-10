@@ -1,0 +1,27 @@
+section.main-section
+  include ../components/header.pug
+  .out-wrapper.main-section__out-wrapper
+    .wrapper
+      .main-section__container
+        h1.main-section__title.font-w-h-regular.font-s-64.text-up
+          | Откройте уникальную 
+          br.no-br
+          | кофейню 
+          span.main-section__title-mark-orange в стиле Гарри Поттера 
+          br
+          | с франшизой 
+          span.main-section__title-mark-green «DOBBY COFFEE»
+        .main-section__sub-title.font-w-semi-bold.font-s-22
+          | и получайте 
+          span.color-orange от 445 000 рублей 
+          | чистой 
+          br.no-br
+          | прибыли ежемесячно
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") открыть кофейню
+          .main-section__agree-wrapper
+            include ../components/agree.pug
+        img.main-section__img(src="images/main-section-img.png" loading="lazy" width="826" height="715" alt="image")

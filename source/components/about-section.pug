@@ -1,0 +1,70 @@
+section.about-section
+  .out-wrapper.about-section__out-wrapper
+    .wrapper
+      .about-section__container
+        .about-section__block-1
+          .about-section__block-1-inner
+            h2.about-section__title.font-w-h-regular.font-s-64.text-up
+              span Подробнее
+              span.about-section__title-mark о концепции кофейни
+            .about-section__block-1-text.font-s-18-a
+              .about-section__text-item.b-radius-16
+                span.font-w-bold
+                  | «DOBBY COFFEE» — это единственная кофейня в Ижевске 
+                  br.no-br
+                  | с уникальной концепцией по мотивам Гарри Поттера. 
+                br.no-br
+                | У нас гости становятся частью волшебного мира и буквально 
+                br.no-br
+                | пробуют магию на вкус. Это и фирменный кофе с нотками 
+                br.no-br
+                | волшебства, и согревающие зелья из собственных сортов чая, 
+                br.no-br
+                | и эксклюзивные десерты от наших кондитеров.
+              .about-section__text-item.b-radius-16
+                span.font-w-bold Наша кофейня — идеальное место для семейного отдыха. 
+                br.no-br
+                | Каждый месяц мы проводим мастер-классы для детей 
+                br.no-br
+                | и взрослых, организуем тематические дни рождения и яркие 
+                br.no-br
+                | мероприятия. И все это — в нестандартной тематической 
+                br.no-br
+                | атмосфере, которая так нравится нашим гостям.
+          img.about-section__img-1.b-radius-16(src="images/about-section-img-1.jpg" loading="lazy" width="480" height="546" alt="image")
+        .about-section__block-2
+          .about-section__images
+            img.about-section__img-2.b-radius-16(src="images/about-section-img-2.jpg" loading="lazy" width="220" height="194" alt="image")
+            img.about-section__img-3.b-radius-16(src="images/about-section-img-3.jpg" loading="lazy" width="258" height="194" alt="image")
+          .about-section__block-2-text.b-radius-16.font-w-regular.font-s-18-a
+            span.font-w-bold
+              | Открывая собственную кофейню с франшизой «DOBBY 
+              br.no-br
+              | COFFEE», 
+            | вы получаете возможность выделиться среди 
+            br.no-br
+            | конкурентов и стать местом притяжения для любителей 
+            br.no-br
+            | вкусного кофе и фанатов Гарри Поттера в своём городе. 
+            br.no-br
+            | Мы передадим вам все секреты оформления кофейни, 
+            br.no-br
+            | поделимся уникальными рецептами блюд и напитков, поможем 
+            br.no-br
+            | выстроить все процессы с нуля.
+        .about-section__block-3
+          .about-section__bottom.b-radius-16
+            .font-w-bold.font-s-26
+              | Будем рады видеть вас в числе 
+              br.no-br
+              | новых партнёров «DOBBY COFFEE»!
+            .about-section__bottom-text.font-w-regular.font-s-18 Ждем ваши вопросы по франшизе!
+            form.about-section__form(data-feedback-form)
+              input.input(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input.about-section__form-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+              input.input.about-section__form-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+              button.btn.about-section__form-item(type="submit") Задать вопрос
+            .about-section__agree-wrapper
+              include ../components/agree.pug
+          img.about-section__img-4.b-radius-16(src="images/about-section-img-4.jpg" loading="lazy" width="306" height="384" alt="image")

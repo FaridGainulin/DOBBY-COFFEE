@@ -1,0 +1,47 @@
+.footer
+  background-color: $color-black-text
+
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    padding 10px 0
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+      padding 11px 0
+    +above($breakpoints.md)
+      padding 12px 0
+    +above($breakpoints.xxl)
+      padding 13px 0
+
+  &__brand-block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 15px
+    +above($breakpoints.md)
+      gap: 22px
+    +above($breakpoints.xxl)
+      gap: 27px
+
+  &__logo
+    width 90px
+    height: auto
+    +above($breakpoints.sm)
+      width 80px
+    +above($breakpoints.md)
+      width 85px
+    +above($breakpoints.xxl)
+      width 90px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline
+    color: #656565

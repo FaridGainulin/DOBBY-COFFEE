@@ -1,0 +1,44 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg-1(src="images/finances-section-img-bg-1.svg" loading="lazy" width="478" height="357" alt="image")
+      img.finances-section__img-bg-2(src="images/finances-section-img-bg-2.svg" loading="lazy" width="851" height="745" alt="image")
+      .finances-section__block
+        img.finances-section__img.b-radius-16(src="images/finances-section-img.jpg" loading="lazy" width="500" height="709" alt="image")
+        .finances-section__block-item
+          h2.finances-section__title.font-w-h-regular.font-s-64.text-up
+            span.color-black-text Г лавные показатели
+            br
+            span.finances-section__title-mark «DOBBY COFFEE»
+          .swiper-bullet
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 3 месяца
+                .font-s-18 понадобится <br> на запуск
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 445 000 ₽
+                .font-s-18 средняя <br> ежемесячная прибыль
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 3 080 000 ₽
+                .font-s-18 средний <br> размер инвестиций
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 32,8%
+                .font-s-18 рентабельность <br> по чистой прибыли
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 8 месяцев
+                .font-s-18 средний срок <br> окупаемости
+              .finances-section__card.b-radius-16.swiper-slide
+                .font-w-bold.font-s-35 1 350 000 ₽
+                .font-s-18 средняя ежемесячная <br> выручка
+            .bullet-pagination
+      .finances-section__bottom.b-radius-16
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="283" height="393" alt="image")
+        .font-w-bold.font-s-26 Хотите получить детальные цифры и расчёты?
+        .finances-section__bottom-text.font-s-18 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

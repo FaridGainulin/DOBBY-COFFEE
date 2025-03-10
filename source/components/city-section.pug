@@ -1,0 +1,23 @@
+section.city-section
+  .out-wrapper.city-section__out-wrapper
+    .wrapper
+      .city-section__container
+        h2.city-section__title.font-w-h-regular.font-s-64.text-up
+          | Узнайте больше о том,
+          br
+          span.city-section__title-mark как стать партнером
+          br
+          | франшизы
+        .city-section__sub-title.font-w-semi-bold.font-s-24
+          | и получать 
+          span.color-orange от 445 000 рублей 
+          | чистой 
+          br.no-br
+          | прибыли ежемесячно
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Оставить заявку
+          .city-section__agree-wrapper
+            include ../components/agree.pug
